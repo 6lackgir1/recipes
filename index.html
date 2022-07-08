@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Recipes</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -11,107 +12,45 @@
 </head>
 <body>
 <header class="header">
-    <div class= "container-header">
-        <img class="logo" src="images/Recipes.svg" width="99" height="29">
-        <ul class ="menu-list">
-            <li class="menu-item menu-item--active">Главная</li>
-            <li class="menu-item">Рецепты</li>
-            <li class="menu-item">Избранное</li>
-        </ul>
-    </div>
-    <div class="logo-ent">
-        <div class="circle"><img src="images/people.svg"></div>
-        <a class="bt" onclick="openSection('form-enter')">Войти</a>
-    </div>
-    <div class="body-header">
-        <div class="text">
-            <h1 class="text text--big">
-                Готовь и делись<br/> рецептами
-            </h1>
-            <p>
-                Никаких кулинарных книг и блокнотов! Храни все <br/>
-                любимые рецеты в одном месте
-            </p>
-            <p></p>
+    <div class="container-body">
+        <div class= "container-header">
+            <img class="logo" src="images/Recipes.svg" alt=" ">
+            <ul class ="menu-list">
+                <li class="menu-item menu-item--active">Главная</li>
+                <li class="menu-item">Рецепты</li>
+                <li class="menu-item">Избранное</li>
+            </ul>
+            <div class="logo-ent">
+                <div class="circle"><img src="images/people.svg" alt=" "></div>
+                <a class="bt" onclick="openSection('form-add')">Войти</a>
+            </div>
         </div>
-        <div class="btn-container">
-            <a class="button button--addrecipe" onclick="openSection('form-add')">
-                + Добавить рецепт
-            </a>
-            <a class="button" onclick="openSection('form-enter')">
-                Войти
-            </a>
-        </div>
-        <div>
-            <img src="images/Rectangle 1.jpg" class="image-main">
-        </div>
-    </div>
-    <div id="form-add" class="content">
-        <form>
-            <div class="end">
-                <a class="bt bt--form" onclick="closeSection()">x</a>
+        <div class="body-header">
+            <div class="text">
+                <h1 class="text text--big">
+                    Готовь и делись<br/> рецептами
+                </h1>
+                <p>
+                    Никаких кулинарных книг и блокнотов! Храни все <br/>
+                    любимые рецеты в одном месте
+                </p>
+                <p></p>
             </div>
-
-            <h1 class="text-form">Войдите в профиль</h1>
-            <p class="text-form">Добавить рецепт могут только зарегестрированные<br/>
-                пользователи</p>
-
-            <div class="bt-container-form">
-                <a class="button button--addrecipe" onclick="openSection('form-enter')">
-                    Войти
-                </a>
-                <a class="button" onclick="openSection('form-registration')">
-                    Регистрация
-                </a>
-            </div>
-        </form>
-    </div>
-    <div id="form-registration" class="content">
-        <form class="formRegistration">
-            <div class="end">
-                <a class="bt bt--form" onclick="closeSection()">x</a>
-            </div>
-            <h1>Регистрация</h1>
-            <input type="text" size="70" placeholder="Имя" class="search search--name">
-            <input type="text" size="70" placeholder="Логин" class="search search--lg">
-            <input type="text" size="70" placeholder="Пароль" class="search search--password">
-            <input type="text" size="70" placeholder="Повторите пароль" class="search search--password-confirmation">
-            <div class="bt-container">
-                <a class="button button--addrecipe" onclick="valid()">
-                    Зарегистрироваться
-                </a>
-                <a class="button" onclick="closeSection()">
-                    Отмена
-                </a>
-            </div>
-            <a class="bt" onclick="openSection('form-enter')">
-                У меня уже есть аккаунт
-            </a>
-        </form>
-    </div>
-    <div id="form-enter" class="content">
-        <form>
-            <div class="end">
-                <a class="bt bt--form" onclick="closeSection()">x</a>
-            </div>
-            <h1>Войти</h1>
-            <input type="text" size="70" placeholder="Логин" class="search">
-            <input type="text" size="70" placeholder="Пароль" class="search">
-            <div class="bt-container">
+            <div class="btn-container">
                 <a class="button button--addrecipe">
+                    + Добавить рецепт
+                </a>
+                <a class="button" onclick="openSection('form-add')">
                     Войти
                 </a>
-                <a class="button" onclick="closeSection()">
-                    Отмена
-                </a>
             </div>
-            <a class="bt" onclick="openSection('form-registration')">
-                У меня ещё нет аккаунта
-            </a>
-        </form>
+        </div>
+
     </div>
+    <img src="images/Rectangle1.jpg" class="image-main" alt=" ">
 </header>
 <main>
+    <div class="container-body">
     <div class="main-container">
         <div class="text">
             <h1 class="text text--medium">
@@ -124,7 +63,7 @@
             <div class="rectangle">
                 <div class="rectangle rectangle--small">
 
-                    <img src="images/ic-menu.svg">
+                    <img src="images/ic-menu.svg" alt=" ">
 
                 </div>
                 <h1>
@@ -135,7 +74,7 @@
             <div class="rectangle">
                 <div class="rectangle rectangle--small">
 
-                    <img src="images/childe.svg">
+                    <img src="images/childe.svg" alt=" ">
 
                 </div>
                 <h1>
@@ -146,7 +85,7 @@
             <div class="rectangle">
                 <div class="rectangle rectangle--small">
 
-                    <img src="images/pov.svg">
+                    <img src="images/pov.svg" alt=" ">
 
                 </div>
                 <h1>
@@ -157,7 +96,7 @@
             <div class="rectangle">
                 <div class="rectangle rectangle--small">
 
-                    <img src="images/hol.svg">
+                    <img src="images/hol.svg" alt=" ">
 
                 </div>
                 <h1>
@@ -168,25 +107,25 @@
         </div>
         <div class="recipe-container">
             <div class="product-picture">
-                <img src="images/Rectangle 8.jpg">
+                <img src="images/Rectangle8.jpg" alt=" ">
             </div>
             <div class="like-time">
 
-                <a class="counters" onclick="incrementClick()">
-                    <img src="images/like.svg"class="indent">
+                <a class="counters" onclick="Click()">
+                    <img src="images/like.svg" class="indent" alt=" ">
                     <p id="label">0</p>
                 </a>
                 <a class="counters">
-                    <img src="images/time.svg" class="indent">
+                    <img src="images/time.svg" class="indent" alt=" ">
                     <p>35 минут</p>
                 </a>
             </div>
             <div>
                 <div class="word">
-                    <img src="images/wor.svg">
+                    <img src="images/wor.svg" alt=" ">
                 </div>
                 <div class="smile-all">
-                    <img src="images/yummy.svg" class="smile">
+                    <img src="images/yummy.svg" class="smile" alt=" ">
                 </div>
                 <div class="text">
                     <h1 class="text text--medium">
@@ -211,19 +150,85 @@
                 <a class="button button--addrecipe">Найти</a>
             </div>
             <div class="text-input">
-                <p class="text">Мясо   Деликатесы   Пироги   Рыба</p>
+                <a class="text" href="#">Мясо   Деликатесы   Пироги   Рыба</a>
             </div>
         </div>
 
     </div>
-
+    </div>
 </main>
 <footer>
-    <img class="logo" src="images/Recipes.svg" width="99" height="29">
-    <p>© Recipes 2021</p>
-
+    <img class="footer-logo logo" src="images/Recipes.svg" alt="">
+    <p class="logo-text">© Recipes 2021</p>
 </footer>
-<script src="js/script.js"></script>
+<div id="form-add" class="popUpWind">
+    <form name="form-add">
+        <div class="end">
+            <a class="bt bt--form" onclick="closeSection()">x</a>
+        </div>
+
+        <h1 class="text-form">Войдите в профиль</h1>
+        <p class="text-form">Добавить рецепт могут только зарегестрированные<br/>
+            пользователи</p>
+
+        <div class="bt-container-form">
+            <a class="button button--addrecipe" onclick="openSection('form-enter')">
+                Войти
+            </a>
+            <a class="button" onclick="openSection('form-registration')">
+                Регистрация
+            </a>
+        </div>
+    </form>
+</div>
+<div id="form-registration" class="popUpWind">
+    <form class="formRegistration"  method="POST" action="php/check.php">
+        <div class="end">
+            <a class="bt bt--form" onclick="closeSection()">x</a>
+        </div>
+        <h1>Регистрация</h1>
+        <input type="text" name="name" size="70" placeholder="Имя" class="search search--name">
+        <input type="text" name="login_reg" size="70" placeholder="Логин" class="search search--lg">
+        <input type="password" name="password_reg" size="70" placeholder="Пароль" class="search search--password">
+        <input type="password" size="70" placeholder="Повторите пароль" class="search search--password-confirmation">
+        <div class="bt-container">
+            <button type="submit" class="button button--addrecipe" name="registration">Зарегистрироваться</button>
+            <!--<a class="button button--addrecipe" onclick="valid()">
+                Зарегистрироваться
+            </a>-->
+            <a class="button" onclick="closeSection()">
+                Отмена
+            </a>
+        </div>
+        <a class="bt" onclick="openSection('form-enter')">
+            У меня уже есть аккаунт
+        </a>
+    </form>
+</div>
+<div id="form-enter" class="popUpWind">
+    <form method="POST" action="php/auth.php">
+        <div class="end">
+            <a class="bt bt--form" onclick="closeSection()">x</a>
+        </div>
+        <h1>Войти</h1>
+        <input type="text" name="login_enter" placeholder="Логин" class="search">
+        <input type="password" name="password_enter" placeholder="Пароль" class="search">
+        <div class="bt-container">
+            <button type="submit" class="button button--addrecipe" name="enter">Войти</button>
+            <!--<a class="button button--addrecipe">
+                Войти
+            </a> -->
+            <a class="button" onclick="closeSection()">
+                Отмена
+            </a>
+        </div>
+        <a class="bt" onclick="openSection('form-registration')">
+            У меня ещё нет аккаунта
+        </a>
+    </form>
+</div>
+<script src="js/jscript.js"></script>
+
 </body>
 
 </html>
